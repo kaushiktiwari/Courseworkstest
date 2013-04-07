@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  upload_date: MyString
+  Date: MyString
+
+two:
+  upload_date: MyString
+  Date: MyString

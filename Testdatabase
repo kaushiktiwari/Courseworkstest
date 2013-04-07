@@ -1,0 +1,18 @@
+User 
+has many courses embedded
+has many assignments
+
+Course
+has many users
+has many lectures
+has many assignments embedded
+
+Lecture
+has  many users
+
+Assignment
+embedded in User
+embedded in Course
+
+
+

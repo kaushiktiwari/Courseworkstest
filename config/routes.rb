@@ -1,4 +1,16 @@
 Courseworks::Application.routes.draw do
+  resources :uploads
+
+
+  resources :assignments
+
+
+  resources :lectures
+
+
+  resources :courses
+
+
   get "users/new"
 
   # The priority is based upon order of creation:
