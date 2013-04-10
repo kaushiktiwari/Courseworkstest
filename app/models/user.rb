@@ -1,10 +1,9 @@
 class User
-	include Mongoid::Document
+  include Mongoid::Document
 
-	has_many :courses
-	embedded_many :assignments
-	embedded_many :uploads
+  has_and_belongs_to_many :courses
+  embeds_many :uploads
 
-	field :first_name,:type=>String
-	field :last_name,:type=>String
+  field :first_name,:type=>String
+  field :last_name,:type=>String
 end
