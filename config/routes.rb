@@ -1,5 +1,9 @@
 Courseworks::Application.routes.draw do
+
+  resources :users
+
   resources :uploads
+
 
 
   resources :assignments
@@ -9,6 +13,12 @@ Courseworks::Application.routes.draw do
 
 
   resources :courses
+
+  match "signup" => "users#new", :as => "signup"
+  match "login" => "sessions#new", :as => "login"
+  match "logout" => "sessions#destroy", :as => "logout"
+
+
 
 
   get "users/new"
