@@ -16,7 +16,8 @@ Courseworks::Application.routes.draw do
   resources :courses
 
   match "signup" => "users#new", :as => "signup"
-  match "login" => "sessions#new", :as => "login"
+  match "login" => "sessions#create", :as => "login",:via => :post
+  match "login" => "sessions#new", :as => "login",:via => :get
   match "logout" => "sessions#destroy", :as => "logout"
 
 

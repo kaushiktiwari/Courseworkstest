@@ -1,6 +1,8 @@
 class Course
   include Mongoid::Document
 
+  validates :course_title, presence => true
+
   has_and_belongs_to_many :users
   has_many :lectures
   embeds_many :assignments
